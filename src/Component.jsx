@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { View } from 'react-native'
+import { Text, View } from 'react-native'
 import * as trackingService from './services/tracking'
 import * as userService from './services/user'
 
@@ -19,6 +19,6 @@ export function Component () {
   }, [])
 
   return (
-    <View>User recognised: {isRecognisedUser}</View>
+    <View><Text>User recognised: {isRecognisedUser}</Text></View>
   )
 }
